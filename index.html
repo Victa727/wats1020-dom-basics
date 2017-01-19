@@ -6,22 +6,33 @@
         <title>Fortune Cookie Generator</title>
         <meta name="description" content="This page generates fortune cookie sayings.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="stylesheet" href="main.css">
         <script type="text/javascript" src="fortune-cookie-generator.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
     </head>
     <body>
-        <h1>Fortune Cookie Generator</h1>
-        <p>Use this page to generate fortune cookie sayings.</p>
+        <h1>Madame Zenda's Fortune Generator</h1>
+        <p>Your Destiny Awaits.</p>
         <div class="fortune-cookie-saying-wrapper">
-            <p id="fortune-cookie-text">Click the button to generate a saying.</p>
+            <p id="fortune-cookie-text">Select the card below generate your fortune.</p>
         </div>
         <!-- TODO: Make this button execute the `generateFortuneCookie()` function. -->
-        <button class="generate-button" onclick= "generateFortuneCookie()">
-            Make My Fortune!
+        <button class="btn-1" onclick= "generateFortuneCookie()">
+          <img src="images/sun-tarot.jpg" alt="Sun Tarot Card" class="image">
+            <div class="overlay">
+            <div class="text">REVEAL MY FORTUNE!</div>  
+          </div>  
         </button>
+        <button class="btn-2" onclick= "generateFortuneCookie()">
+          <img src="images/priestess-tarot.jpg" alt="Strength Tarot Card" class="image">
+            <div class="overlay">
+            <div class="text">REVEAL MULTIPLE FORTUNES!</div>  
+          </div>  
+        </button>
+      
         <hr>
-        <h2>Previous Fortunes</h2>
+        <h2>Don't forget! </h2> 
+          <p>The destiny that awaits you is of your own making.<br>But just in case, your fortune, again:</p>
         <ul id="previous-fortunes-container">
         <!-- TODO: Modify javascript so previously generated fortunes are listed here. -->
         </ul>

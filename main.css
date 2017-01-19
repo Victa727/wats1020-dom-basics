@@ -3,11 +3,69 @@
 html {
     text-align: center;
     padding: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'IM Fell English SC', serif;
 }
 
-.fortune-cookie-saying-wrapper {
-    border: 1px solid #666;
-    padding: 1em;
-    margin: 1em;
+p, li {
+  font-size: 18px;
+  list-style-type: none;
+  text-align: center;
 }
+
+/*.btn-1, .btn-2 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(90, 127, 68);
+}
+
+.btn-1:hover .overlay, .btn-2:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: 'IM Fell English SC', serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}*/
+
+.fortune-cookie-saying-wrapper {
+    border: 2px solid lightgray;
+    margin: 20px 100px 20px 100px;
+}
+
+.btn-1, .btn-2 {
+  margin: 10px;
+  padding: 10px;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 10px;
+}
+
+.btn-1:hover, .btn-2:hover {
+  border: rgb(90, 127, 68) 3px solid;
+}
+
+
+
