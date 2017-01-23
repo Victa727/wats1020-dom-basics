@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Fortune Cookie Generator</title>
+        <title>Fortune Generator</title>
         <meta name="description" content="This page generates fortune cookie sayings.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
@@ -14,27 +14,32 @@
         <h1>Madame Zenda's Fortune Generator</h1>
         <p>Your Destiny Awaits.</p>
         <div class="fortune-cookie-saying-wrapper">
-            <p id="fortune-cookie-text">Select a card below generate your fortune.</p>
+            <p id="fortune-cookie-text"></p>
+            <p id="select-fortune">Select a card below generate your fortune(s).</p>
         </div>
         <!--button with conclick attribute executes the `generateFortuneCookie()` function-->
-        <button class="btn-1" onclick= "generateFortuneCookie()">
+        <button class="btn-1" onclick="generateFortuneCookie()">
           <img src="images/sun-tarot.jpg" alt="Sun Tarot Card" class="image">
             <div class="overlay">
             <div class="text"><br>REVEAL MY FORTUNE!</div>  
           </div>  
         </button>
-        <button class="btn-2" onclick= "generateFortuneCookie()">
+        <button class="btn-2" onclick= "showMultipleFortunes()">
           <img src="images/priestess-tarot.jpg" alt="Strength Tarot Card" class="image">
             <div class="overlay">
             <div class="text"><br>MULTIPLE FORTUNES!</div>  
           </div>  
         </button>
-      
+        <!-- text and field for party mode -->
+       <div id="multiple-users">How many fortunes would you like Madame Zenda to tell?
+          <input class="text" type="number" id="user-num" onchange="generateMultipleFortunes()" >
+        </div>
+        
         <hr>
         <h2>Don't forget!</h2> 
           <p>The destiny that awaits you is of your own making. But just in case, your fortune, again:</p>
         <ul id="previous-fortunes-container">
         <!--Modifications made to JS so previously generated fortunes are listed here-->
-        </ul>
+        </ul>       
     </body>
 </html>

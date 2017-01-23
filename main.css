@@ -28,7 +28,13 @@ p, li {
   border: rgb(90, 127, 68) 3px solid;
 }
 
+/* to ensure <div> is hidden until btn-2 is pressed */
+#multiple-users {
+  visibility: hidden;
+}
+
 .text {
   font-size: 14px;
 }
+
 
