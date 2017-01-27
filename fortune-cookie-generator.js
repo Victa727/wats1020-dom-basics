@@ -119,5 +119,6 @@ var generateMultipleFortunes = function() {
       var multiFortune = fortunesList[randomIndex];
       newFortuneContainer.innerHTML = newFortuneContainer.innerHTML + "<br>" + multiFortune;
     }
+  document.getElementById("user-num").value = 1;
 }
 
