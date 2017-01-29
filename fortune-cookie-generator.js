@@ -122,3 +122,4 @@ var generateMultipleFortunes = function() {
   document.getElementById("user-num").value = 1;
 }
 
+//
